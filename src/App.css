@@ -1,0 +1,10 @@
+:root {
+  --bg-color: #E1D4FF;
+  --bg-color2: #281C6C;
+  --bg-color3: #3b2f80;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
