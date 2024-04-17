@@ -4,8 +4,6 @@ import { MdWaves } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
 import React from "react";
 
-
-
 const Weather = () => {
   let api_key = "e533810c40bc77511a0b9b40c4a0f765";
 
@@ -33,9 +31,9 @@ const Weather = () => {
       if (data.weather[0].icon === "01d" || data.weather[0].icon === "01n") {
         Icon.setAttribute(
           "src",
-          `https://clipartmag.com/images/sky-clipart-30.png`
+          `https://th.bing.com/th/id/R.c656eebdb3aa5ffb1aad3d95a667f6de?rik=asFZhNlkhj1gxg&pid=ImgRaw&r=0`
         );
-       
+
         console.log(data.weather[0].description);
       } else if (
         data.weather[0].icon === "02d" ||
@@ -61,7 +59,7 @@ const Weather = () => {
           "src",
           `https://www.freeiconspng.com/uploads/clouds-png-22.png`
         );
-       
+
         console.log(data.weather[0].description);
       } else if (
         data.weather[0].icon === "09d" ||
@@ -113,7 +111,10 @@ const Weather = () => {
   };
 
   return (
-    <section className="body d-flex justify-content-center align-items-center" id="body">
+    <section
+      className="body d-flex justify-content-center align-items-center"
+      id="body"
+    >
       <div className="containers p-4 rounded-3 ">
         <div className="top-bar d-flex justify-content-evenly align-items-center">
           <input
@@ -143,7 +144,7 @@ const Weather = () => {
             London
           </p>
         </div>
-        <div className="Measures d-flex flex-row justify-content-evenly align-items-center">
+        <div className="Measures d-flex flex-row justify-content-around align-items-center">
           <div className="humidity">
             <div className="d-flex flex-row align-items-center justify-content-center text-white gap-2 fw-bold fs-4 ">
               <MdWaves />
